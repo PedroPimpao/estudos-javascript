@@ -1,0 +1,33 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        body{
+            background-color: rgb(70, 122, 180);
+            color: white;
+            font: normal 15pt Arial;
+        }
+       
+    </style>
+</head>
+<body>
+    <h1>Olá, Mundo</h1>
+    <p>Já me livrei da maldição!</p>
+    <script>
+        var nome1=String(window.prompt('Escreva alguma coisa'))
+        var nome2=String(window.prompt('Escreva outra coisa'))
+        concatenacao=nome1+nome2
+        window.alert(concatenacao)
+        var nome=String(window.prompt('Seu nome:'))
+        var nome_grande=nome.toUpperCase()
+        var nome_pequeno=nome.toLowerCase()
+        var tamanho=nome.length
+        window.alert(`Seu nome é ${nome_grande} ou ${nome_pequeno}`)
+        window.alert(`Seu nome possui ${tamanho} letras!`)
+        document.write(`<h2>Seu nome possui ${tamanho} letras!</h2>`)
+    </script>
+</body>
+</html>

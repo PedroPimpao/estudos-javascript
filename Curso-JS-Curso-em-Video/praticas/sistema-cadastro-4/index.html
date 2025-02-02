@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <form action="app.js">
+        <header>
+            <h1>Cadastre-se</h1>
+        </header>
+        <main>
+            <section class="inputBox">
+                <label for="nameTxt">Nome:</label>
+                <input type="text" class="inputField" placeholder="Nome" id="nameTxt">
+                <a class="ErrorMessage" id="ErrorMessage"></a>
+            </section>
+            <section class="inputBox">
+                <label for="emailTxt">Email:</label>
+                <input type="email" class="inputField" placeholder="Email" id="emailTxt">
+                <a class="ErrorMessage" id="ErrorMessage"></a>
+            </section>
+            <section class="inputBox">
+                <label for="passwordTxt">Senha:</label>
+                <input type="password" class="inputField" placeholder="Senha..." id="passwordTxt">
+                <a class="ErrorMessage" id="ErrorMessage"></a>
+            </section>
+            <section class="inputBox">
+                <label for="passwordConfirmTxt">Confirme a senha:</label>
+                <input type="password" class="inputField" placeholder="Senha..." id="passwordConfirmTxt">
+                <a class="ErrorMessage" id="ErrorMessage"></a>
+            </section>
+            <section class="SexOptionRadios">
+
+                <input type="radio" name="sexOption" id="MenOption" value="Homem" class="radio">
+                <label for="MenOption" id="MenLabel" class="labelSexOption label-1">Homem</label>
+
+
+                <input type="radio" name="sexOption" id="WomenOption" value="Mulher" class="radio">
+                <label for="WomenOption" id="WomenLabel" class="labelSexOption label-2">Mulher</label>
+
+            </section>
+        </main>
+        <footer>
+            <input type="button" value="Cadastrar" onclick="Cadastrar()" class="submitButton">
+        </footer>
+    </form>
+    <script src="app.js"></script>
+</body>
+</html>

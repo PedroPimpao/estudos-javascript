@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Introdução ao DOM</title>
+    <style>
+        body{
+            background-color: rgb(68, 125, 199);
+            color: white;
+            font: normal 18px Arial;
+        }
+        
+    </style>
+</head>
+<body>
+    <h1>Entendendo DOM</h1>
+    <p>La vai o resultado</p>
+    <p>Aprendendo a usar o <strong>DOM</strong> em JavaScript</p>
+    <div>Clica em mim 1!</div>
+    <div id="Primeiro">Clica em mim 2!</div>
+    <div class="Segundo">Clica em mim 3!</div>
+    <div name="Terceiro">Clica em mim 4!</div>
+    <div>Clica em mim 5!</div>
+    <br>
+    <script>
+        var p1=window.document.getElementsByTagName('div')[0]
+        var p2=window.document.getElementById('Primeiro')
+        var p3=window.document.getElementsByClassName('Segundo')[0]
+        var p4=window.document.getElementsByName('Terceiro')[0]
+        var d=window.document.querySelector('div#Primeiro')
+        var d2=window.document.querySelector('div.Segundo')
+        document.write("<pre>")
+        window.document.write(`Resultado ByTagName: ${p1.innerText}`)
+        window.document.write(`\nResultado ById: ${p2.innerText}`)
+        window.document.write(`\nResultado ByClassName: ${p3.innerText}`)
+        window.document.write(`\nResultado ByName: ${p4.innerText}`)
+        window.document.write(`\n\nResultado QuerySelector com ID: ${d.innerText}`)
+        window.document.write(`\nResultado QuerySelector com Class: ${d2.innerText}`)
+        document.write('\n\n\nA MINHA MENTE TA FRITANDO! SOCORRO KKKKK')
+        document.write("</pre>")
+        
+        var corpo=window.document.body
+        
+        
+    </script>
+</body>
+</html>

@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="form">
+        <header>
+            <h1>Cadastro</h1>
+        </header>
+        <main>
+            <section class="inputBox">
+                <label for="nomeTxt">Nome: </label>
+                <input type="text" class="inputTxt" id="nomeTxt">
+                <a id="msgErrorName"></a>
+            </section>
+            <section class="inputBox">
+                <label for="emailTxt">Email: </label>
+                <input type="email" class="inputTxt" id="emailTxt">
+                <a id="msgErrorEmail"></a>
+            </section>
+            <section class="inputBox">
+                <label for="senhaTxt">Senha: </label>
+                <input type="password" class="inputTxt" id="senhaTxt">
+                <a id="msgErrorPass"></a>
+            </section>
+            <section class="inputBox">
+                <label for="ConfSenhaTxt">Confirme a Senha: </label>
+                <input type="password" class="inputTxt" id="ConfSenhaTxt">
+                <a id="msgErrorConfPass"></a>
+            </section>
+        </main>
+        <footer>
+            <input type="button" value="Cadastrar" onclick="cadastrar()">
+        </footer>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Lista de cursos 2.0</title>
+</head>
+<body>
+    <main>
+        <div id="newCourseFuncionality" class="container">
+
+            <div id="newCourseBox" class="funcionality">
+                <label for="newCourseInput">Novo Curso</label>
+                <input type="text" name="newCourseName" id="newCourseInput" class="inputBox">
+                <button id="addCourseButton" class="button">
+                    Adicionar
+                </button>
+            </div>
+
+            <div id="removeCourseBox" class="funcionality">
+                <button id="removeCourseButton" class="button">
+                    Remover Selecionado
+                </button>
+            </div>
+
+            <div id="selectedCourseBox" class="funcionality">
+                <button id="selectedCourseButton" class="button">
+                    Curso Selecionado
+                </button>
+                <div class="selectCourseResult">
+                    <!-- Curso selecionado -->
+                </div>
+            </div>
+
+        </div>
+
+        <div id="coursesContainer" class="container">
+            <!-- Cursos adicionados -->
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>

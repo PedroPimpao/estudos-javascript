@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juros e Montante</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculadora">
+        <header>
+            <h1>Juros Compostos</h1>
+        </header>
+        <main>
+            <section class="inputBox">
+                <label for="capitalTxt">Capital: </label>
+                <input type="text" class="inputField" id="capitalTxt" placeholder="R$ 0.00">
+            </section>
+            <section class="inputBox">
+                <label for="tempoTxt">Tempo (Em meses): </label>
+                <input type="text" class="inputField" id="tempoTxt" placeholder="00">
+            </section>
+            <section class="inputBox">
+                <label for="taxaTxt">Taxa (a.a%): </label>
+                <input type="text" class="inputField" id="taxaTxt" placeholder="0.00%">
+            </section>
+        </main>
+        <footer>
+            <input type="button" value="Calcular" id="CalculateButton" class="CalculateButton">
+        </footer>
+        <div class="resultado" id="res">-----</div>
+    </div>
+    <script src="juros.js"></script>
+</body>
+</html>

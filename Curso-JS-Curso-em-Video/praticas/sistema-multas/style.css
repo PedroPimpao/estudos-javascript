@@ -1,0 +1,42 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+div#resultadoDiv{
+    background-color: #8fb9b9;
+    padding: 10px;
+    width: 500px;
+    text-align: center;
+    margin: auto;
+    border-radius: 5px;
+}
+input#velocidadeTxt{
+    background-color: #c8cdd1;
+    padding: 7.5px;
+    border-radius: 5px;
+    border: 0;
+    outline: 0;
+}
+input#verificar{
+    padding: 7.5px;
+    border-radius: 5px;
+    background-color: #8ed8bf;
+    border: 0;
+    cursor: pointer;
+}
+body{
+    background-color: #4368b8;
+    height: 90vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    background-color: #f0f8ff;
+    width: 600px;
+    height: 30vh;
+    border-radius: 20px;
+    padding: 15px;
+    text-align: center;
+    margin: auto;
+    align-items: center;
+}

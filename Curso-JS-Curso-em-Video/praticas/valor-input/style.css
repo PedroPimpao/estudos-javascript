@@ -1,0 +1,21 @@
+form{
+    text-align: center;
+    margin: auto;
+    top: -50%;
+    left: 50%;
+    min-height: 90vw;
+}
+input#texto{
+    padding: 10px;
+    border-radius: 5px;
+    border: 0;
+    outline: 0;
+    background-color: #bebebe;
+}
+input#enviar{
+    border-radius: 2px;
+    outline: 0;
+    background-color: #e4e4e4;
+    border: 0;
+    padding: 5px;
+}

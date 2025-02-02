@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Juros Compostos Final</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="calculadora">
+        <header>
+            <h1>Juros Compostos</h1>
+        </header>
+
+        <div id="opcoesCalculo">
+            <input type="radio" name="Calc-Options" id="radioMont" class="radio">
+            <label for="radioMont" class="label label-1" id="label-1">Montante</label>
+
+            <input type="radio" name="Calc-Options" id="radioCap" class="radio">
+            <label for="radioCap" class="label label-2" id="label-2">Capital</label>
+
+            <input type="radio" name="Calc-Options" id="radioTempo" class="radio">
+            <label for="radioTempo" class="label label-3" id="label-3">Tempo</label>
+        </div>
+
+
+        <main class="campoMontante">
+            <section class="inputBox">
+                <label for="capitalTxt">Capital: </label>
+                <input type="text" class="inputField" id="capitalTxt" placeholder="R$ 0.00">
+            </section>
+            <section class="inputBox">
+                <label for="tempoTxt">Tempo (Em meses): </label>
+                <input type="text" class="inputField" id="tempoTxt" placeholder="00">
+            </section>
+            <section class="inputBox">
+                <label for="taxaTxt">Taxa (a.a%): </label>
+                <input type="text" class="inputField" id="taxaTxt" placeholder="0.00%">
+            </section>
+        </main>
+
+        <main class="campoCapital">
+            <section class="inputBox">
+                <label for="montanteTxt">Montante desejado: </label>
+                <input type="text" class="inputField" id="montanteTxt" placeholder="R$ 0.00">
+            </section>
+            <section class="inputBox">
+                <label for="tempoTxt">Tempo (Em meses): </label>
+                <input type="text" class="inputField" id="tempoTxt" placeholder="00">
+            </section>
+            <section class="inputBox">
+                <label for="taxaTxt">Taxa (a.a%): </label>
+                <input type="text" class="inputField" id="taxaTxt" placeholder="0.00%">
+            </section>
+        </main>
+
+        <main class="campoTempo">
+            <section class="inputBox">
+                <label for="capitalTxt">Capital: </label>
+                <input type="text" class="inputField" id="capitalTxt" placeholder="R$ 0.00">
+            </section>
+            <section class="inputBox">
+                <label for="montanteTxt">Montante final: </label>
+                <input type="text" class="inputField" id="montanteTxt" placeholder="00">
+            </section>
+            <section class="inputBox">
+                <label for="taxaTxt">Taxa (a.a%): </label>
+                <input type="text" class="inputField" id="taxaTxt" placeholder="0.00%">
+            </section>
+        </main>
+
+        
+        <footer>
+            <input type="button" value="Calcular" id="CalculateButton" class="CalculateButtonMont">
+            <input type="button" value="Calcular" id="CalculateButton2" class="CalculateButtonCap">
+            <input type="button" value="Calcular" id="CalculateButton3" class="CalculateButtonTempo">
+        </footer>
+
+        <div class="resultadoMont" id="res">----</div>
+        <div class="resultadoCap" id="res">----</div>
+        <div class="resultadoTempo" id="res">----</div>
+
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>

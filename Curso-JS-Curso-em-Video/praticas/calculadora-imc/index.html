@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculadora de IMC</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body class="" id="body">
+    <div class="calculator" id="calculator">
+        <header>
+            <h1>Calculadora de IMC</h1>
+            <section class="SexField">
+                <div class="SexOption" id="opcaoHomem" onclick="ChangeMenStyle()">
+                    Homem
+                </div>
+                <div class="SexOption" id="opcaoMulher" onclick="ChangeWomenStyle()">
+                    Mulher
+                </div>
+            </section>
+            <section id="inputIdade">
+                <label for="idadeTxt" id="idadeLabel">Idade</label>
+                <input type="text" id="idadeTxt" placeholder="_ _">
+            </section>
+        </header>
+        <main>
+            <section class="inputBox">
+                <label for="pesoTxt">Peso</label>
+                <input type="number" class="inputField" id="pesoTxt" placeholder="Peso em Kg...">
+            </section>
+            <section class="inputBox">
+                <label for="alturaTxt">Altura</label>
+                <input type="number" class="inputField" id="alturaTxt" placeholder="Altura em Cm...(-,--)">
+            </section>
+            <section class="OcultResult" id="resultDiv">
+                
+            </section>
+        </main>
+        <footer>
+            <input type="button" value="Calcular" id="CalculateButton" onclick="calculate()">
+        </footer>
+    </div>
+    <script src="app.js"></script>
+</body>
+</html>

@@ -1,0 +1,31 @@
+div#botoes{
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%,-50%);
+    min-width: 90vw;
+    text-align: center;
+    margin: auto;
+}
+input.botao{
+    padding: 5px;
+    border: 0;
+    border-radius: 5px;
+    color: white;
+    cursor: pointer;
+    font-size: 22px;
+    font-weight: 300;
+    margin: 0 10px;
+}
+input#btn-vermelho{
+    background-color: #bb4e4e;
+}
+input#btn-verde{
+    background-color: #549b54;
+}
+input#btn-azul{
+    background-color: #669ed1;
+}
+input#limpo{
+    color: black;
+}  

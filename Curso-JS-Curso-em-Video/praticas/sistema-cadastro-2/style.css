@@ -1,0 +1,84 @@
+@charset "UTF-8";
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+:root{
+    --backgroundColor: #a7f3d0;
+}
+
+body{
+    display: flex;
+    height: 90vh;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--backgroundColor);
+}
+
+.form{
+    background-color: #FFF;
+    padding: 10px;
+    border-radius: 15px;
+    box-shadow: 2px 2px 2px 2px #00000057;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    min-width: 450px;
+    margin: auto;
+}
+.form h1{
+    text-align: center;
+}
+
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+.inputBox{
+    display: flex;
+    flex-direction: column;
+    width: 300px;
+    margin: auto;
+    gap: 5px;
+}
+.inputTxt{
+    padding: 5px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #8080806e;
+}
+
+footer{
+    text-align: center;
+    margin: auto;
+    width: 300px;
+    margin-top: 10px;
+}
+footer input{
+    width: 100%;
+    padding: 7.5px;
+    border-radius: 5px;
+    background-color: #22d3ee;
+    border: 0;
+    cursor: pointer;
+}
+footer input:hover{
+    transform: scale(1.05);
+}
+footer input:active{
+    background-color: #73d8e7;
+    font-weight: bolder;
+}
+
+.inputTxt.Erro{
+    padding: 5px;
+    border-radius: 5px;
+    border-style: solid;
+    border-color: #ff0000d3;
+    background-color: #ff000056;
+}
+a{
+    color: #FF0000;
+}

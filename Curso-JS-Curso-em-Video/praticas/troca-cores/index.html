@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Cores</title>
+    <style>
+        .vermelho{
+            background-color: #bb4e4e;
+        }
+        .verde{
+            background-color: #549b54;
+        }
+        .azul{
+            background-color: #669ed1;
+        }
+
+    </style>
+</head>
+<body id="corpo">
+    <div id="botoes">
+        <input type="button" value="Vermelho" id="btn-vermelho" class="botao" >
+        <input type="button" value="Verde" id="btn-verde" class="botao" >
+        <input type="button" value="Azul" id="btn-azul" class="botao">
+        <input type="button" value="Limpar" id="limpo" class="botao">
+    </div>
+    <script>
+        document.getElementById('btn-vermelho').addEventListener('click',function(){document.getElementById('corpo').setAttribute('class','vermelho')
+        })
+        document.getElementById('btn-verde').addEventListener('click',function(){document.getElementById('corpo').setAttribute('class','verde')
+        })
+        document.getElementById('btn-azul').addEventListener('click',function(){document.getElementById('corpo').setAttribute('class','azul')
+        })
+        document.getElementById('limpo').addEventListener('click',function(){document.getElementById('corpo').removeAttribute('class')
+        })
+    </script>
+    
+</body>
+</html>

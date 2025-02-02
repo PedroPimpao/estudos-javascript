@@ -1,0 +1,34 @@
+body{
+    background-color: #add8e6;
+    
+}
+header{
+    text-align: center;
+    margin: auto;
+}
+section{
+    background-color: #ffffff;
+    padding: 15px;
+    border-radius: 15px;
+    text-align: center;
+    align-items: center;
+    width: 500px;
+    margin: auto;
+}
+footer{
+    text-align: center;
+    margin: auto;
+    font-style: italic;
+    padding: 5px;
+    color: #ffffff;
+}
+#imagem{
+    width: 230px;
+    height: 230px;
+    border-radius: 50%;
+}
+#msgHora{
+    padding: 5px;
+    font-weight: bold;
+    font-size: large;
+}

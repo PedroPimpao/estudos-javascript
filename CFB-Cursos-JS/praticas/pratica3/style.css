@@ -1,0 +1,119 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+main{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+.button{
+    width: 150px;
+    height: 40px;
+    background-color: #0f7ec9;
+    color: #FFF;
+    cursor: pointer;
+    border-radius: 10px;
+}
+
+.cursos{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 200px;
+    border: 4px solid #888;
+    border-radius: 10px;
+    padding: 10px;
+    margin: 5px 0px;
+    cursor: pointer;
+}
+
+/* .c1{
+    background-color: #ccc;
+    color: #444;
+}
+.c2{
+    background-color: #444;
+    color: #ccc;
+} */
+
+.cursos:hover{
+    border-color: #f00;
+}
+
+/* Inativo é o msm que "c1" */
+.inativo{
+    background-color: #ccc;
+    color: #444;
+}
+
+/* Selecionado é o msm que "c2" */
+.selecionado{
+    background-color: #444;
+    color: #ccc;
+}
+
+
+.container{
+    border: 4px solid #000;
+    background-color: #eee;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+    min-height: 500px;
+    width: 300px;
+}
+
+.btn_lixeira{
+    width: 25px;
+    cursor: pointer;
+}
+
+.funcionality{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 5px;
+}
+
+.comandos{
+    width: 30%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.inputBox{
+    padding: 10px;
+    border-radius: 5px;
+    outline: none;
+    border: 1px solid black;
+    margin: 10px;
+}
+.selectCourseResult{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 50px;
+    width: 200px;
+    padding: 10px;
+    border-radius: 10px;
+    background-color: #FFF;
+    box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.486);
+    margin-top: 10px;
+    color: #000;
+}

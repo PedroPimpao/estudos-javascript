@@ -1,0 +1,106 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+:root{
+    --linearGradient: linear-gradient(to right, #342c94, #8021b8);
+    --blueColor: #342c94;
+    --purpleColor: #8021b8;
+    --formBackgroundColor: #3f3f3f;
+    --headerBackground: #0000006c;
+    --inputFieldLine: #4c1d95;
+    --inputFieldLineFocus: #8b1d95;
+    --SubmitButtonBorder: #4c1d95;
+    --SubmitButtonBorderFocus: #8b1d95;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    background: var(--linearGradient);
+}
+.calculadora{
+    padding: 20px;
+    border-radius: 5px;
+    background: var(--formBackgroundColor);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-width: 450px;
+}
+.calculadora header{
+    background: var(--headerBackground);
+    color: #FFF;
+    text-align: center;
+    margin: -20px;
+    border-radius: 5px 5px 0px 0px;
+    padding: 30px;
+}
+.calculadora header>h1{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.calculadora main{
+    margin: 30px;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+.calculadora section{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: #FFF;
+}
+.inputField{
+    padding: 5px;
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid var(--inputFieldLine);
+    outline: 0;
+    transition: 0.5s;
+}
+.inputField:focus{
+    padding: 5px;
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid var(--inputFieldLineFocus);
+    outline: 0;
+    transition: 0.5s;
+}
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+.CalculateButton{
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid var(--SubmitButtonBorder);
+    background: transparent;
+    width: 70%;
+    font-size: larger;
+}
+.CalculateButton:hover{
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid var(--SubmitButtonBorder);
+    background: var(--blueColor);
+    transition: 0.5s;
+}
+.CalculateButton:active{
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid var(--SubmitButtonBorderFocus);
+    background: var(--linearGradient);
+}
+.resultado{
+    text-align: center;
+    color: #FFF;
+    font-size: larger;
+    font-weight: bolder;
+    padding: 10px;
+}

@@ -1,0 +1,78 @@
+@charset "UTF-8";
+
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+body{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: #a5f3fc;
+    height: 90vh;
+}
+.form{
+    background-color: #FFF;
+    padding: 15px;
+    border-radius: 15px;
+    max-width: 400px;
+    min-width: 350px;
+    box-shadow: 1px 1px 5px #00000071;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+    align-items: center;
+    margin: 0;
+}
+main{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+section{
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+.inputTxt{
+    padding: 6px;
+    border-radius: 5px;
+    border: 1px;
+    border-style: solid;
+    border-color: gray;
+    max-width: 350px;
+    min-width: 300px;
+}
+footer{
+    margin-top: 30px;
+    width: 90%;;
+}
+#btn-cadastrar{
+    background-color: #06b6d4;
+    border: 0;
+    padding: 12px;
+    border-radius: 5px;
+    width: 100%;
+}
+#btn-cadastrar:hover{
+    transform: scale(1.04);
+    font-weight: bold;
+}
+#btn-cadastrar:active{
+    background-color: #6fbbc9;
+    color: #FFF;
+}
+
+.inputTxt.Erro{
+    padding: 6px;
+    border-radius: 5px;
+    border: 2px;
+    border-style: solid;
+    border-color: #f80000;
+    background-color: #ce4c4c8f;
+    max-width: 350px;
+    min-width: 300px;
+}
+
+main a{
+    color: #FF0000;
+}

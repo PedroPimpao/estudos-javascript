@@ -1,0 +1,40 @@
+*{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+input#paisInput{
+    background-color: #bbc3c4;
+    padding: 10px;
+    border-radius: 10px;
+    border: 0;
+    outline: 0;
+}
+input#btn-confirmacao{
+    padding: 10px;
+    border-radius: 10px;
+    border: 0;
+    background-color: #a3b9e2;
+    cursor: pointer;
+}
+div#resultadoDiv{
+    background-color: #a4c9c7;
+    padding: 15px;
+    border-radius: 10px;
+}
+body{
+    background-color: #d4b48c;
+    display: flex;
+    height: 90vh;
+    justify-content: center;
+    align-items: center;
+}
+main{
+    background-color: #FFF;
+    justify-content: center;
+    text-align: center;
+    align-items: center;
+    margin: auto;
+    padding: 15px;
+    border-radius: 20px;
+    width: 600px;
+    height: 30vh;
+}

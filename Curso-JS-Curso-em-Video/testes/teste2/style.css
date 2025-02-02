@@ -1,0 +1,32 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+}
+.button{
+    background: orange;
+    border: 1px solid #000000;
+    width: 170px;
+    height: 40px;
+}
+.button:active{
+    background: #ffa60071;
+}
+.bloco1{
+    width: 400px;
+    height: 400px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    background: lightblue;
+}
+
+.bloco2{
+    width: 400px;
+    height: 400px;
+    display: none;
+    justify-content: center;
+    align-items: center;
+    margin: 30px;
+    background: lightcoral;
+}
+

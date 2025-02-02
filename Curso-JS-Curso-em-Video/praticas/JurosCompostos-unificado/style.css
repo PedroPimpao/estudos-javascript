@@ -1,0 +1,232 @@
+*{
+    font-family: Arial, Helvetica, sans-serif;
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+:root{
+    --linearGradient: linear-gradient(to right, #342c94, #8021b8);
+    --blueColor: #342c94;
+    --purpleColor: #8021b8;
+    --formBackgroundColor: #3f3f3f;
+    --headerBackground: #0000006c;
+    --inputFieldLine: #4c1d95;
+    --inputFieldLineFocus: #8b1d95;
+    --SubmitButtonBorder: #4c1d95;
+    --SubmitButtonBorderFocus: #8b1d95;
+}
+body{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 90vh;
+    background: var(--linearGradient);
+}
+.calculadora{
+    padding: 20px;
+    border-radius: 5px;
+    background: var(--formBackgroundColor);
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    min-width: 450px;
+}
+.calculadora header{
+    background: var(--headerBackground);
+    color: #FFF;
+    text-align: center;
+    margin: -20px;
+    border-radius: 5px 5px 0px 0px;
+    padding: 30px;
+}
+.calculadora header>h1{
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+#opcoesCalculo{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 30px;
+    gap: 15px;
+}
+.radio{
+    display: none;
+}
+.label{
+    padding: 8px;
+    background: transparent;
+    border-radius: 5px;
+    color: #FFF;
+    border: 2px solid var(--blueColor);
+    cursor: pointer;
+    transition: 0.5s;
+}
+.label:hover{
+    padding: 8px;
+    background: transparent;
+    border-radius: 5px;
+    color: #FFF;
+    border: 2px solid var(--purpleColor);
+    cursor: pointer;
+    transition: 0.5s;
+}
+
+#radioMont:checked ~ .label-1,
+#radioCap:checked ~ .label-2,
+#radioTempo:checked ~ .label-3{
+    background: var(--linearGradient);
+}
+
+.campoMontante{
+    display: flex;
+    margin: 30px;
+    flex-direction: column;
+    gap: 10px;
+}
+.campoCapital{
+    display: none;
+    margin: 30px;
+    flex-direction: column;
+    gap: 10px;
+}
+.campoTempo{
+    display: none;
+    margin: 30px;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.calculadora section{
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    color: #FFF;
+}
+.inputField{
+    padding: 5px;
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid var(--inputFieldLine);
+    outline: 0;
+    transition: 0.5s;
+}
+.inputField:focus{
+    padding: 5px;
+    background: transparent;
+    border: 0;
+    border-bottom: 2px solid var(--inputFieldLineFocus);
+    outline: 0;
+    transition: 0.5s;
+}
+footer{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+}
+
+.CalculateButtonMont{
+    display: block;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid var(--SubmitButtonBorder);
+    background: transparent;
+    width: 70%;
+    font-size: larger;
+}
+.CalculateButtonMont:hover{
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid var(--SubmitButtonBorder);
+    background: var(--blueColor);
+    transition: 0.5s;
+}
+.CalculateButtonMont:active{
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid var(--SubmitButtonBorderFocus);
+    background: var(--linearGradient);
+}
+
+
+.CalculateButtonCap{
+    display: none;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid var(--SubmitButtonBorder);
+    background: transparent;
+    width: 70%;
+    font-size: larger;
+}
+.CalculateButtonCap:hover{
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid var(--SubmitButtonBorder);
+    background: var(--blueColor);
+    transition: 0.5s;
+}
+.CalculateButtonCap:active{
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid var(--SubmitButtonBorderFocus);
+    background: var(--linearGradient);
+}
+
+
+.CalculateButtonTempo{
+    display: none;
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid var(--SubmitButtonBorder);
+    background: transparent;
+    width: 70%;
+    font-size: larger;
+}
+.CalculateButtonTempo:hover{
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid var(--SubmitButtonBorder);
+    background: var(--blueColor);
+    transition: 0.5s;
+}
+.CalculateButtonTempo:active{
+    text-align: center;
+    padding: 10px;
+    border-radius: 8px;
+    border: 2px solid var(--SubmitButtonBorderFocus);
+    background: var(--linearGradient);
+}
+
+
+.resultadoMont{
+    display: block;
+    text-align: center;
+    color: #FFF;
+    font-size: larger;
+    font-weight: bolder;
+    padding: 10px;
+}
+.resultadoCap{
+    display: none;
+    text-align: center;
+    color: #FFF;
+    font-size: larger;
+    font-weight: bolder;
+    padding: 10px;
+}
+.resultadoTempo{
+    display: none;
+    text-align: center;
+    color: #FFF;
+    font-size: larger;
+    font-weight: bolder;
+    padding: 10px;
+}

@@ -1,0 +1,33 @@
+*{
+    font-family: 'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+}
+body{
+    background-color: #6b95c5;
+}
+main{
+    background-color: #ffffff;
+    text-align: center;
+    margin: auto;
+    padding: 10px;
+    border-radius: 10px;
+    width: 500px;
+    height: 300px;
+    top: 50%;
+    left: 50%;
+}
+input.number{
+    background-color: #f0ffff;
+    padding: 5px;
+    border-radius: 5px;
+}
+input#btn-somar{
+    padding: 5px;
+    cursor: pointer;
+}
+div#res{
+    margin: auto;
+    background-color: #a2cccc;
+    width: 100px;
+    padding: 5px;
+    border-radius: 5px;
+}
