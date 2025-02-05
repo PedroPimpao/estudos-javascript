@@ -14,31 +14,31 @@
         </div>
         <div class="formField">
             <label for="input-doors">Portas</label>
-            <input type="number" name="input-doors" id="input-doors">
+            <input type="number" name="input-doors" id="input-doors" value="2" min="2" max="4">
         </div>
         <div class="formField">
             <label for="input-shield">Blindagem</label>
-            <input type="number" name="input-shield" id="input-shield">
+            <input type="number" name="input-shield" id="input-shield" disabled value="0">
         </div>
         <div class="formField">
             <label for="input-ammo">Munição</label>
-            <input type="number" name="input-ammo" id="input-ammo">
+            <input type="number" name="input-ammo" id="input-ammo" disabled value="0">
         </div>
         <div class="formField">
             <label>Tipo</label>
             <div class="radio">
-                <input type="radio" name="input-type" id="militar-type" value="militar">Militar
+                <input type="radio" name="input-type" id="militar-type" value="militar" class="radio-input">Militar
             </div>
             <div class="radio">
-                <input type="radio" name="input-type" id="normal-type" value="'normal">Normal
+                <input type="radio" name="input-type" id="normal-type" value="'normal" class="radio-input" checked>Normal
             </div>
         </div>
-        <div class="fieldForm">
+        <div class="formField">
             <button id="btn-addCar">Adicionar</button>
         </div>
     </div>
     <div class="carros">
-        <!-- <div class="carro">Golf</div> -->
+        <div class="carro">Golf</div>
     </div>
 
 

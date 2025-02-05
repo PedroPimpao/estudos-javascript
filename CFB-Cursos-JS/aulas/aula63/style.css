@@ -4,6 +4,7 @@
     border: none;
     box-sizing: border-box;
     font-size: large;
+    user-select: none;
 }
 body{
     min-height: 100vh;
@@ -23,6 +24,7 @@ body{
     border-radius: 5px;
     display: flex;
     width: 200px;
+    min-height: 70px;
 }
 .formField{
     display: flex;
