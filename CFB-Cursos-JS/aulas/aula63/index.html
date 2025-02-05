@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <title>Aula 63 Classes</title>
+</head>
+<body>
+    <div id="createCar" class="createCar">
+        <div class="formField">
+            <label for="input-name">Nome</label>
+            <input type="text" name="input-name" id="input-name">
+        </div>
+        <div class="formField">
+            <label for="input-doors">Portas</label>
+            <input type="number" name="input-doors" id="input-doors">
+        </div>
+        <div class="formField">
+            <label for="input-shield">Blindagem</label>
+            <input type="number" name="input-shield" id="input-shield">
+        </div>
+        <div class="formField">
+            <label for="input-ammo">Munição</label>
+            <input type="number" name="input-ammo" id="input-ammo">
+        </div>
+        <div class="formField">
+            <label>Tipo</label>
+            <div class="radio">
+                <input type="radio" name="input-type" id="militar-type" value="militar">Militar
+            </div>
+            <div class="radio">
+                <input type="radio" name="input-type" id="normal-type" value="'normal">Normal
+            </div>
+        </div>
+        <div class="fieldForm">
+            <button id="btn-addCar">Adicionar</button>
+        </div>
+    </div>
+    <div class="carros">
+        <!-- <div class="carro">Golf</div> -->
+    </div>
+
+
+    <script src="app.js"></script>
+</body>
+</html>
