@@ -1,5 +1,5 @@
 let num=[5,8,2,9,3,"Camaro","Mamão Papaia"]
-num.push("Papaya Rules")
+num.push("Manga")
 num.push("2+1=4")
 num.push(13)
 let pos
