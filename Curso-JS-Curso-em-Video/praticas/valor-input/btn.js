@@ -1,1 +1,1 @@
-export const btn = document.getElementById('enviar');
+const btn = document.getElementById('enviar');
