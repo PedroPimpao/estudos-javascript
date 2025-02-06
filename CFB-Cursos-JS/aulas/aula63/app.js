@@ -52,7 +52,7 @@ const addButton=document.querySelector('#btn-addCar')
 // Elemento resultado
 const carsField=document.querySelector('.carros')
 
-let veiculos=['Jetta']
+let veiculos=[]
 
 // Verificação de Radio selecionado
 const selectType=()=>{
@@ -79,37 +79,46 @@ radios.forEach((radio)=>{
     radio.addEventListener('change',selectType)
 })
 
+const showCarsElement=document.querySelector('.carros')
+
+const showCars=()=>{
+    showCarsElement.innerHTML=``
+    veiculos.forEach((veiculo)=>{
+        const elementoCarro=document.createElement('div')
+        elementoCarro.classList.add('carro')
+        if(normalType.checked){
+            veiculo.blindagem=0
+            veiculo.municao=0
+        }
+        elementoCarro.innerHTML=`Nome: ${veiculo.nome} <br>`
+        elementoCarro.innerHTML+=`Portas: ${veiculo.porta} <br>`
+        elementoCarro.innerHTML+=`Blindagem: ${veiculo.blindagem} <br>`
+        elementoCarro.innerHTML+=`Munição: ${veiculo.municao} <br>`
+        showCarsElement.appendChild(elementoCarro)
+    })
+}
 
 const createMilitarVeichle=()=>{
     const newVeichle=new Militar(inputName.value,inputDoors.value,inputShield.value,inputAmmo.value)
-    console.log(`Nome: ${newVeichle.getName()}`)
-    console.log(`Portas: ${newVeichle.getDoors()}`)
-    console.log(`Blindagem: ${newVeichle.getShield()}`)
-    console.log(`Munição: ${newVeichle.getAmmo()}`)
+    console.log(`Nome: ${newVeichle.nome}`)
+    console.log(`Portas: ${newVeichle.porta}`)
+    console.log(`Blindagem: ${newVeichle.blindagem}`)
+    console.log(`Munição: ${newVeichle.municao}`)
     veiculos.push(newVeichle)
     console.log(veiculos)
+    showCars()
     console.log('')
 }
 
 const createNormalVeichle=()=>{
     const newVeichle=new Veiculo(inputName.value,inputDoors.value)
-    console.log(`Nome: ${newVeichle.getName()}`)
-    console.log(`Portas: ${newVeichle.getDoors()}`)
+    console.log(`Nome: ${newVeichle.nome}`)
+    console.log(`Portas: ${newVeichle.porta}`)
     veiculos.push(newVeichle)
     console.log(veiculos)
+    showCars()
     console.log('')
 }
-veiculos.forEach((veiculo)=>{
-    const showCarsElement=document.querySelector('.carros')
-    const elementoCarro=document.createElement('div')
-    elementoCarro.classList.add('carro')
-    elementoCarro.innerHTML=`Novo veículo`
-    elementoCarro.innerHTML=`Nome: ${veiculo.getName()}`
-    elementoCarro.innerHTML+=`Portas: ${veiculo.getDoors()}`
-    elementoCarro.innerHTML+=`Blindagem: ${veiculo.getShield()}`
-    elementoCarro.innerHTML+=`Munição: ${veiculo.getAmmo()}`
-    showCarsElement.appendChild(elementoCarro)
-})
 
 
 
