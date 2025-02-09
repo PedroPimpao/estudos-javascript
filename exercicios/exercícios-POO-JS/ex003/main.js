@@ -6,14 +6,20 @@ class Retangulo{
     }
     calc_area(){
         this.area=this.largura*this.altura
-        console.log(`Área: ${this.area}cm²`) 
+        return `Área: ${this.area}cm²`
     }
     calc_perimetro(){
         this.perimetro=(this.largura*2)+(this.altura*2)
-        console.log(`Perímetro: ${this.perimetro}cm`) 
+        return `Perímetro: ${this.perimetro}cm`
+    }
+    info(){
+        console.log('-------------')
+        console.log(`Largura: ${this.largura}cm`)
+        console.log(`Altura: ${this.altura}cm`)
+        console.log(this.calc_area())
+        console.log(this.calc_perimetro())
+        console.log('-------------')
     }
 }
 const retangulo=new Retangulo(10,5)
-retangulo.calc_area()
-retangulo.calc_perimetro()
-
+retangulo.info()
