@@ -44,9 +44,9 @@ function main(){
     // console.log(type, duration)
     // console.log(secontType, secondDuration)
      
-    const {inventory : {potions:[{type,duration}, {type: secontType, duration: secondDuration}]}}=player
+    const {inventory : {potions:[{type: firstType ,duration: firstDuration}, {type: secondType, duration: secondDuration}]}}=player
 
-    console.log(type, duration)
-    console.log(secontType, secondDuration)
+    console.log(firstType, firstDuration)
+    console.log(secondType, secondDuration)
 }
 main()
