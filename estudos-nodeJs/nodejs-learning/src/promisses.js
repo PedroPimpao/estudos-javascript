@@ -7,19 +7,38 @@ const requestCar=(drivers)=>{
     })
 }
 
-async function main(){
-    let drivers=0
+let drivers=0
 
-    const request=await requestCar(drivers)
-    .catch(()=>{
-        return null
-    })
-    if(!request){
-        console.log(`Erro`)
-        return
+async function mainTry(){
+    
+    try {
+        const request=await requestCar(drivers)
+        console.log("Try (Try e catch): ")
+        console.log(request)
+    } catch (error) {
+        console.log("Catch error (Try e catch): ")
+        console.log(error)
     }
 
-   console.log(request)
-
 }
-main()
+mainTry()
+
+
+const mainThen=()=>{
+    
+    requestCar(drivers)
+    .then((text)=>{
+        console.log("Then (then e catch):")
+        console.log(text)
+    })
+    .catch((error)=>{
+        console.log("Catch (then e catch):")
+        console.log(error)
+    })
+    .finally(()=>{
+        console.log('Fim (then e catch)')
+    })
+    
+}
+mainThen()
+
