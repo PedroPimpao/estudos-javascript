@@ -6,6 +6,18 @@ class Produto{
         this.preco=input_preco
         this.quantidade=input_quantidade
     }
+
+    acrescentar(quantidade){
+        this.quantidade+=quantidade
+    }
+
+    decrescentar(quantidade){
+        if(this.quantidade > 0){
+            this.quantidade-=quantidade
+        }else{
+            console.log("Não há produtos para remover")
+        }
+    }
 }
 
 class MaquinaDeVendas{
@@ -16,6 +28,7 @@ class MaquinaDeVendas{
     mensagemListaVazia(){
         console.log(`Lista de Produtos vazia!`)
     }
+
     cadastrarProduto(nome, preco, quantidade){
         const novoProduto = new Produto(nome, preco, quantidade)
         this.lista_produtos.push(novoProduto)
@@ -23,6 +36,7 @@ class MaquinaDeVendas{
         this.exibirProduto(novoProduto)
         return novoProduto
     }
+
     removerProduto(produtoRemovido){
         if(this.lista_produtos.length > 0){
             this.lista_produtos=this.lista_produtos.filter((produto)=>{
@@ -34,14 +48,16 @@ class MaquinaDeVendas{
             this.mensagemListaVazia()
         }
     }
+
     exibirProduto(produto){
         const {nome, preco, quantidade}=produto
         console.log("==============")
         console.log(`Nome: ${nome}`)
-        console.log(`Preço: ${preco}`)
+        console.log(`Preço: R$${preco}`)
         console.log(`Quantidade disponível: ${quantidade}`)
         console.log("==============")
     }
+
     exibirLista(){
         if(this.lista_produtos.length > 0){
             this.lista_produtos.map((produto, indice)=>{
@@ -52,4 +68,29 @@ class MaquinaDeVendas{
             this.mensagemListaVazia()
         }
     }
+
+    comprar(produto, dinheiro){
+        const { preco, quantidade }=produto
+        if(dinheiro >= preco && quantidade > 0){
+            let troco=dinheiro-preco
+            dinheiro-=preco
+            produto.quantidade--
+            console.log(`Compra realizada!`)
+            this.exibirProduto(produto)
+            if(troco > 0){
+                console.log(`Troco: R$${troco.toFixed(2)}`)
+            }
+        }else{
+            console.log("Compra cancelada!")
+        }
+    }
 }
+
+const maquina=new MaquinaDeVendas()
+
+const produto1=maquina.cadastrarProduto('Biscoito', 6, 15)
+const produto2=maquina.cadastrarProduto('Chocolate' ,4, 4)
+maquina.exibirLista()
+maquina.comprar(produto1,56)
+maquina.removerProduto(produto2)
+maquina.exibirLista()
