@@ -1,1 +1,13 @@
 // Crie uma classe chamada “MáquinaDeVendas” que simule uma máquina de venda de produtos. Essa classe deve permitir cadastrar produtos, selecionar um produto para compra, inserir dinheiro, retornar o troco e exibir o estoque disponível.
+
+class Produto{
+    constructor(){
+        
+    }
+}
+
+class MaquinaDeVendas{
+    constructor(){
+
+    }
+}
