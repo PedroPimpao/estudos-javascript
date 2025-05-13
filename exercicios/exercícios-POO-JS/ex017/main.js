@@ -103,9 +103,9 @@ class RedeSocial{
 
 
 const instagram = new RedeSocial()
-const user1 = instagram.cadastrar_usuario("Pedro")
-const user2 = instagram.cadastrar_usuario("Raphael")
-const user3 = instagram.cadastrar_usuario("Felipe")
+const user1 = instagram.cadastrar_usuario("User1")
+const user2 = instagram.cadastrar_usuario("User2")
+const user3 = instagram.cadastrar_usuario("User3")
 
 instagram.exibirListaUsuarios()
 
